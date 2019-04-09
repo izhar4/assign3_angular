@@ -7,6 +7,8 @@ import { HelpInfoComponent } from './help-info/help-info.component';
 import { AboutComponent } from './about/about.component';
 import { StudentDetailComponent } from './student-detail/student-detail.component';
 import { SelectCoursesComponent } from './select-courses/select-courses.component';
+import { ActivateAccountComponent } from './activate-account/activate-account.component';
+import { CreateAccountComponent } from './create-account/create-account.component';
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'home'},
@@ -16,7 +18,9 @@ const routes: Routes = [
   {path: 'help', component: HelpInfoComponent},
   {path: 'about', component: AboutComponent},
   {path: 'student/:id', component: StudentDetailComponent},
-  {path: 'select-courses/:studentId/:program', component: SelectCoursesComponent}
+  {path: 'select-courses/:studentId/:program', component: SelectCoursesComponent},
+  {path: 'activate-account', component: ActivateAccountComponent},
+  {path:'create-account', component:CreateAccountComponent }
 ];
 
 @NgModule({

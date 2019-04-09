@@ -13,7 +13,10 @@ import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { StudentDetailComponent } from './student-detail/student-detail.component';
 import { SelectCoursesComponent } from './select-courses/select-courses.component';
-
+import { ActivateAccountComponent } from './activate-account/activate-account.component';
+import { CreateAccountComponent } from './create-account/create-account.component';
+import { FormsModule } from '@angular/forms';
+import { MustMatchDirective } from './directives/must-match.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,12 +28,16 @@ import { SelectCoursesComponent } from './select-courses/select-courses.componen
     AboutComponent,
     FooterComponent,
     StudentDetailComponent,
-    SelectCoursesComponent
+    SelectCoursesComponent,
+    ActivateAccountComponent,
+    CreateAccountComponent,
+    MustMatchDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
