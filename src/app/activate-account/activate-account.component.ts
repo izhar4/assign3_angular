@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./activate-account.component.css']
 })
 export class ActivateAccountComponent implements OnInit {
-  model: any = {role: 'student'};
+  model: any = {role: 'student', email: '', password: '', confirmPassword: ''};
 
   constructor() { }
 

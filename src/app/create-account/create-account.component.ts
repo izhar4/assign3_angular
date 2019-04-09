@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./create-account.component.css']
 })
 export class CreateAccountComponent implements OnInit {
-  model = {role:'student'};
+  model: any = {role: 'student', fullName: '', email: '', password: '', confirmPassword: ''};
   constructor() { }
 
   ngOnInit() {
