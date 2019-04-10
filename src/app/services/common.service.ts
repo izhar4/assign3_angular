@@ -57,4 +57,14 @@ export class CommonService {
         const url = this.baseUrl + 'students/' + id + '/cart/save';
         return this.http.put(url, { courses: data });
     }
+
+    activateuserAccount(data: any): Observable<any> {
+        const url = this.baseUrl + 'useraccounts/activate';
+        return this.http.post(url, { userData: data });
+    }
+
+    createUserAccount(data: any): Observable<any> {
+        const url = this.baseUrl + 'useraccounts/create';
+        return this.http.post(url, { userData: data });
+    }
 }
