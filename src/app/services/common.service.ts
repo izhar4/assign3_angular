@@ -67,4 +67,9 @@ export class CommonService {
         const url = this.baseUrl + 'useraccounts/create';
         return this.http.post(url, { userData: data });
     }
+
+    validateUser(data: any): Observable<any> {
+        const url = this.baseUrl + 'useraccounts/login';
+        return this.http.post(url, { userData: data });
+    }
 }

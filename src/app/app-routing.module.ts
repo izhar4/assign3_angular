@@ -9,18 +9,20 @@ import { StudentDetailComponent } from './student-detail/student-detail.componen
 import { SelectCoursesComponent } from './select-courses/select-courses.component';
 import { ActivateAccountComponent } from './activate-account/activate-account.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
+import { TokenViewComponent } from './token-view/token-view.component';
 
 const routes: Routes = [
-  {path: '', pathMatch: 'full', redirectTo: 'home'},
-  {path: 'home', component: HomeComponent},
-  {path: 'students', component: StudentsComponent},
-  {path: 'available-courses', component: AvailableCorsesComponent},
-  {path: 'help', component: HelpInfoComponent},
-  {path: 'about', component: AboutComponent},
-  {path: 'student/:id', component: StudentDetailComponent},
-  {path: 'select-courses/:studentId/:program', component: SelectCoursesComponent},
-  {path: 'activate-account', component: ActivateAccountComponent},
-  {path:'create-account', component:CreateAccountComponent }
+  { path: '', pathMatch: 'full', redirectTo: 'home' },
+  { path: 'home', component: HomeComponent },
+  { path: 'students', component: StudentsComponent },
+  { path: 'available-courses', component: AvailableCorsesComponent },
+  { path: 'help', component: HelpInfoComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'student/:id', component: StudentDetailComponent },
+  { path: 'select-courses/:studentId/:program', component: SelectCoursesComponent },
+  { path: 'activate-account', component: ActivateAccountComponent },
+  { path: 'create-account', component: CreateAccountComponent },
+  {path: 'user/token-view', component: TokenViewComponent}
 ];
 
 @NgModule({

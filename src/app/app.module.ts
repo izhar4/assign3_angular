@@ -17,6 +17,8 @@ import { ActivateAccountComponent } from './activate-account/activate-account.co
 import { CreateAccountComponent } from './create-account/create-account.component';
 import { FormsModule } from '@angular/forms';
 import { MustMatchDirective } from './directives/must-match.directive';
+import { LoginComponent } from './login/login.component';
+import { TokenViewComponent } from './token-view/token-view.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +33,9 @@ import { MustMatchDirective } from './directives/must-match.directive';
     SelectCoursesComponent,
     ActivateAccountComponent,
     CreateAccountComponent,
-    MustMatchDirective
+    MustMatchDirective,
+    LoginComponent,
+    TokenViewComponent
   ],
   imports: [
     BrowserModule,
